@@ -3,7 +3,6 @@
 </script>
 
 <template>
-  <h1>vue</h1>
 </template>
 
 <style scoped>
