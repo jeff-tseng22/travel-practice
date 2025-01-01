@@ -1,26 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import AttractionList from '../views/Page/AttractionList.vue'
-import AttractionDetail from '../views/Page/AttractionDetail.vue'
-import Favorites from '../views/Page/Favorites.vue'
-import GroupTour from '../views/Page/GroupTour.vue'
-import FreeTour from '../views/Page/FreeTour.vue'
-import Flight from '../views/Page/Flight.vue'
-import Hotel from '../views/Page/Hotel.vue'
-import Cruise from '../views/Page/Cruise.vue'
+import GroupTourView from '../views/GroupTourView.vue'
+import FreeTourView from '../views/FreeTourView.vue'
+import CruiseTourView from '../views/CruiseTourView.vue'
+import RegisterView from '../views/RegisterView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', name: 'Home', component: HomeView },
-    { path: '/list', name: 'AttractionList', component: AttractionList },
-    { path: '/detail/:id', name: 'AttractionDetail', component: AttractionDetail },
-    { path: '/favorites', name: 'Favorites', component: Favorites },
-    { path: '/group-tour', name: 'GroupTour', component: GroupTour },
-    { path: '/free-tour', name: 'FreeTour', component: FreeTour },
-    { path: '/flight', name: 'Flight', component: Flight },
-    { path: '/hotel', name: 'Hotel', component: Hotel },
-    { path: '/cruise', name: 'Cruise', component: Cruise },
+    { path: '/group-tour', name: 'GroupTour', component: GroupTourView },
+    { path: '/free-tour', name: 'FreeTour', component: FreeTourView },
+    { path: '/cruise-tour', name: 'CruiseTour', component: CruiseTourView },
+    { path: '/register', name: 'Register', component: RegisterView }
   ]
 })
 
