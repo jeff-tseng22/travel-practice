@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2024 快樂旅遊 版權所有</p>
+      <p>© 2024 快樂旅遊，版權所有</p>
     </div>
   </footer>
 </template>

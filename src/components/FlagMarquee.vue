@@ -1,7 +1,6 @@
 <template>
   <div class="flag-marquee-container">
     <div class="flags-wrapper">
-      <!-- 重複兩次確保無縫滾動 -->
       <div class="flags-track">
         <div class="flag-item" v-for="flag in [...flags, ...flags]" :key="flag.id + flag.code">
           <img :src="flag.image" :alt="flag.country" @error="handleImageError">
@@ -101,7 +100,6 @@ const flags = [
   animation-play-state: paused;
 }
 
-/* 響應式設計 */
 @media (max-width: 768px) {
   .flags-track {
     gap: 30px;
