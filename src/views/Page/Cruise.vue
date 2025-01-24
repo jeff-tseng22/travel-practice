@@ -9,7 +9,7 @@
 </script>
 
 <style scoped>
-.cruise {
-  padding: 20px;
-}
+  .cruise {
+    padding: 20px;
+  }
 </style> 

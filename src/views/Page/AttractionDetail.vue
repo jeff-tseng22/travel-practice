@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    export default {
-        name: 'AttractionDetail',
-    };
+  export default {
+      name: 'AttractionDetail',
+  };
 </script>
