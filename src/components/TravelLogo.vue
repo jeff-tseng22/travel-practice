@@ -1,7 +1,7 @@
 <template>
   <div class="logo-container">
     <div class="logo-icon">
-      <i class="fas fa-globe-asia"></i>
+      <i class="fa-solid fa-plane"></i>
     </div>
     <div class="logo-text">
       <span class="brand-name">快樂旅遊</span>
@@ -27,11 +27,21 @@
   height: 48px;
   background: rgba(52, 152, 219, 0.1);
   border-radius: 12px;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.logo-icon i {
+  font-weight: 900;
+  transform: rotate(-45deg);
 }
 
 .logo-container:hover .logo-icon {
-  transform: rotate(15deg);
+  transform: translateY(-2px);
+  background: rgba(52, 152, 219, 0.2);
+}
+
+.logo-container:hover .logo-icon i {
+  transform: rotate(-45deg) scale(1.1);
 }
 
 .logo-text {
